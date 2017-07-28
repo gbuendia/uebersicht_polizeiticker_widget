@@ -32,6 +32,10 @@ open `index.coffee` with a text editor and change the desired values.
 
 The widget uses Python and its libraries urllib2 and xml.etree, so they should be installed in the computer beforehand.
 
+## Content licence
+The contents are provided by Spitaleri News and [tickermedia GmbH i.G.](http://www.polizeiticker.ch/rechtliches/impressum/)
+under a [Creative Commons](https://creativecommons.org/licenses/by-sa/3.0/) licence.
+
 ## Image licences
 The widget uses images taken from Wikimedia Commons to display the Cantons coats of arms.
 
