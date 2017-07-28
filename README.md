@@ -15,8 +15,6 @@ Farben, Geschwindigkeit und Nachrichtmenge.
 Einfach den Zip-Datei in dem Übersicht-Widgets Ordner unpacken. Normalerweise ist es `~/Library/Application support/Übersicht/widgets`.
 `index.coffee` mit einem Texteditor öffnen, und die gewünschte Werte ändern.
 
-Das Widget braucht Python und ihre Programmbibliotheke urllib2 und xml.etree, das heisst, sie sollten im Komputer vorhanden sein.
-
 ### Benutzung
 Einfach auf dem Bildschirm rollieren lassen. Wenn Sie über etwas mehr wissen möchten, 
 können Sie auf die Schlagzeile Klicken. Nachsehen Sie die Interaktionstaste auf Ihrer Übersicht generelle Konfiguration. 
@@ -34,8 +32,6 @@ as well as the ticker position on the top or bottom of the screen.
 ###  Install and configure
 Just download and extract the zip file in the apps' widgets folder (normally at `~/Library/Application support/Übersicht/widgets`),
 open `index.coffee` with a text editor and change the desired values.
-
-The widget uses Python and its libraries urllib2 and xml.etree, so they should be installed in the computer beforehand.
 
 ### Use
 Just let it sit on your screen. If something catches your attention and want to know more, 
