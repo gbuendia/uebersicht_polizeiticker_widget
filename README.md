@@ -70,3 +70,8 @@ The widget uses images taken from Wikimedia Commons to display the Cantons coats
 * NE.png: See [Wikimedia Commons](https://commons.wikimedia.org/wiki/File%3AWappen_Neuenburg_matt.svg) for details.
 * GE.png: See [Wikimedia Commons](https://commons.wikimedia.org/wiki/File%3AWappen_Genf_matt.svg) for details.
 * JU.png: See [Wikimedia Commons](https://commons.wikimedia.org/wiki/File%3AWappen_Jura_matt.svg) for details.
+* Germany: See [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Flag_of_Germany.svg) for details.
+
+# Other projects you might like:
+[Übersicht CH Meteo widget](https://github.com/gbuendia/uebersicht_ch_meteo_widget), a widget for Übersicht
+that displays information from the meteorological stations of Switzerland (in English, German, French, Italian and Romansh).
