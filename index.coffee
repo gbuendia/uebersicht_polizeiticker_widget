@@ -1,4 +1,4 @@
-max_items = 5
+max_items = 8
 
 ###########################################################################
 
@@ -50,8 +50,18 @@ update: (output, domEl) ->
 		newsitem.push parts[1] # url
 		newslist.push newsitem
 
-	for i in [1..max_items]
-		$(domEl).find("#canton#{i}").attr "src", "http://lorempixel.com/16/16/" # Canton
+	swiss_cantons = ["ZH", "BE", "LU", "UR", "SZ", "OW", "NW", "GL", "ZG", "FR", "SO", "BS", "BL", "SH", "AR", "AI", "SG", "GR", "AG", "TG", "TI", "VD", "VS", "NE", "GE", "JU"]
+
+	if newslist.length < max_items
+		max_iterations = newslist.length
+	else
+		max_iterations = max_items
+	for i in [1..max_iterations]
+		if newslist[i-1][0] not in swiss_cantons
+			coat_of_arms = "polizeiticker.widget/images/XX.png"
+		else
+			coat_of_arms = "polizeiticker.widget/images/" + newslist[i-1][0] + ".png"
+		$(domEl).find("#canton#{i}").attr "src", coat_of_arms # Canton
 		$(domEl).find("#place#{i}").text newslist[i-1][1] + ": " # Place
 		$(domEl).find("#story#{i}").text newslist[i-1][2] + " ••• " # Title
 
@@ -110,6 +120,7 @@ style: """
 		color: black
 	.ticker_item img
 		vertical-align: middle
+		height: 1.25rem
 	.ticker_item span p
 		display: inline
 	.ticker_item span a
