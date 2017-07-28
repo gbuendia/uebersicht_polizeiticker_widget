@@ -12,6 +12,34 @@ bg_color = "orange" # The colour of the background, the ticker itself
 position = "bottom" # Where on the screen you want the ticker: "top" or "bottom"
 
 ##########################################################################################
+# IMAGE LICENCES FOR THE CANTONS' COATS OF ARMS:
+# Zürich: By Stadt Zürich, see https://commons.wikimedia.org/wiki/File:Wappen_Z%C3%BCrich_matt.svg, via Wikimedia Commons
+# Bern: See https://commons.wikimedia.org/wiki/File%3AWappen_Bern_matt.svg, via Wikimedia Commons
+# Luzern: See https://commons.wikimedia.org/wiki/File%3AWappen_Luzern_matt.svg, from Wikimedia Commons
+# Uri: See https://commons.wikimedia.org/wiki/File%3AWappen_Uri_matt.svg, from Wikimedia Commons
+# Schwyz: See https://commons.wikimedia.org/wiki/File%3AWappen_des_Kantons_Schwyz.svg, from Wikimedia Commons
+# Obwalden: See https://commons.wikimedia.org/wiki/File%3AWappen_Obwalden_matt.svg, from Wikimedia Commons
+# Nidwalden: See https://commons.wikimedia.org/wiki/File%3AWappen_Nidwalden_matt.svg, from Wikimedia Commons
+# Glarus: See https://commons.wikimedia.org/wiki/File%3AWappen_Glarus_matt.svg, from Wikimedia Commons
+# Zug: See https://commons.wikimedia.org/wiki/File%3AWappen_Zug_matt.svg, from Wikimedia Commons
+# Freiburg: See https://commons.wikimedia.org/wiki/File%3AWappen_Freiburg_matt.svg, from Wikimedia Commons
+# Solothurn: See https://commons.wikimedia.org/wiki/File%3AWappen_Solothurn_matt.svg, from Wikimedia Commons
+# Basel-Stadt: See https://commons.wikimedia.org/wiki/File%3AWappen_Basel-Stadt_matt.svg, from Wikimedia Commons
+# Basel-Landschaft:By Otto Plattner and Jwnabd, see https://commons.wikimedia.org/wiki/File%3ACoat_of_arms_of_Kanton_Basel-Landschaft.svg, from Wikimedia Commons
+# Schaffhausen: See https://commons.wikimedia.org/wiki/File%3AWappen_Schaffhausen_matt.svg, from Wikimedia Commons
+# Appenzell-Ausserrhoden: See https://commons.wikimedia.org/wiki/File%3AWappen_Appenzell_Ausserrhoden_matt.svg, from Wikimedia Commons
+# Appenzell-Innerrhoden: See https://commons.wikimedia.org/wiki/File%3AWappen_Appenzell_Innerrhoden_matt.svg, from Wikimedia Commons
+# Sankt Gallen: By Jwnabd, see https://commons.wikimedia.org/wiki/File%3ACoat_of_arms_of_canton_of_St._Gallen.svg, from Wikimedia Commons
+# Graubünden: See https://commons.wikimedia.org/wiki/File%3AWappen_Graub%C3%BCnden_matt.svg, from Wikimedia Commons
+# Aargau: See https://commons.wikimedia.org/wiki/File%3AWappen_Aargau_matt.svg, from Wikimedia Commons
+# Thurgau: See https://commons.wikimedia.org/wiki/File%3AWappen_Thurgau_matt.svg, from Wikimedia Commons
+# Tessin: See https://commons.wikimedia.org/wiki/File%3AWappen_Tessin_matt.svg, from Wikimedia Commons
+# Waadt: See https://commons.wikimedia.org/wiki/File%3AWappen_Waadt_matt.svg, from Wikimedia Commons
+# Wallis: See https://commons.wikimedia.org/wiki/File%3AWappen_Wallis_matt.svg, from Wikimedia Commons
+# Neuenburg: See https://commons.wikimedia.org/wiki/File%3AWappen_Neuenburg_matt.svg, from Wikimedia Commons
+# Genf: See https://commons.wikimedia.org/wiki/File%3AWappen_Genf_matt.svg, from Wikimedia Commons
+# Jura: See https://commons.wikimedia.org/wiki/File%3AWappen_Jura_matt.svg, from Wikimedia Commons
+
 
 command: "python polizeiticker.widget/getnews.py"
 refreshFrequency: 1000 * 60 * 5
