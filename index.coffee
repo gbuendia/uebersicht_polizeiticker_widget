@@ -68,7 +68,7 @@ afterRender: (domEl) -> # I don't know how to do it in Coffeescript
 		child.innerHTML = '<img id="' + theid_canton + '" src=""></> \
 		<span> \
 		<p id="' + theid_place + '"></p> \
-		<a id="' + theid_description + '" href="http://www.google.com"></a> \
+		<a id="' + theid_description + '" href="#"></a> \
 		</span>'
 		parent = document.getElementById("ticker");
 		parent.appendChild(child);
@@ -105,6 +105,12 @@ update: (output, domEl) ->
 		$(domEl).find("#canton#{i}").attr "src", coat_of_arms # Canton
 		$(domEl).find("#place#{i}").text newslist[i-1][1] + ": " # Place
 		$(domEl).find("#story#{i}").text newslist[i-1][2] + " ••• " # Title
+		$(domEl).find("#story#{i}").attr "href", newslist[i-1][3] # URL
+		######################### TO DO ###############################
+		#                                                             #
+		#          WHY CAN'T I GET THE LINKS CLICKABLE?               #
+		#                                                             #
+		###############################################################
 
 style: """
 	color: #fff
