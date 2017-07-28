@@ -117,11 +117,6 @@ update: (output, domEl) ->
 		$(domEl).find("#place#{i}").text newslist[i-1][1] + ": " # Place
 		$(domEl).find("#story#{i}").text newslist[i-1][2] + "." # Title
 		$(domEl).find("#story#{i}").attr "href", newslist[i-1][3] # URL
-		######################### TO DO ###############################
-		#                                                             #
-		#          WHY CAN'T I GET THE LINKS CLICKABLE?               #
-		#                                                             #
-		###############################################################
 
 style: """
 	color: #fff

@@ -17,6 +17,10 @@ Einfach den Zip-Datei in dem Übersicht-Widgets Ordner unpacken. Normalerweise i
 
 Das Widget braucht Python und ihre Programmbibliotheke urllib2 und xml.etree, das heisst, sie sollten im Komputer vorhanden sein.
 
+### Benutzung
+Einfach auf dem Bildschirm rollieren lassen. Wenn Sie über etwas mehr wissen möchten, 
+können Sie auf die Schlagzeile Klicken. Nachsehen Sie die Interaktionstaste auf Ihrer Übersicht generelle Konfiguration. 
+
 ## English
 
 This is a widget for the [Übersicht app](http://tracesof.net/uebersicht/).
@@ -32,6 +36,10 @@ Just download and extract the zip file in the apps' widgets folder (normally at 
 open `index.coffee` with a text editor and change the desired values.
 
 The widget uses Python and its libraries urllib2 and xml.etree, so they should be installed in the computer beforehand.
+
+### Use
+Just let it sit on your screen. If something catches your attention and want to know more, 
+the headlines are clickeable. Check the interaction key in your general Übersicht preferences.
 
 ## Content licence
 The contents are provided by Spitaleri News and [tickermedia GmbH i.G.](http://www.polizeiticker.ch/rechtliches/impressum/)
