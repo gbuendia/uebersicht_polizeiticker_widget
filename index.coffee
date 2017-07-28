@@ -1,6 +1,17 @@
-max_items = 8
+# Polizeiticker Übersicht widget
+# Displays latest headlines from the Polizeiticker.ch RSS (in German)
 
-###########################################################################
+# ## CONFIGURATION ######################################################################
+max_items = 8 # how many headlines you want displayed, at most
+scroll_time = "100s" # How much time until the ticker has traveled across the screen
+# Notice: the longer the ticker, the faster it will go to fulfill a scroll_time
+headlines_color = "white" # What font colou you want to see the headlines in
+first_hl_color = "black" # If you want the first (and newest) item in a different colour
+bg_color = "orange" # The colour of the background, the ticker itself
+# Notice: the colours should be valid CSS names or values (e.g "BurlyWood" or "#DEB887")
+position = "bottom" # Where on the screen you want the ticker: "top" or "bottom"
+
+##########################################################################################
 
 command: "python polizeiticker.widget/getnews.py"
 refreshFrequency: 1000 * 60 * 5
@@ -13,7 +24,7 @@ render: (_) -> """
 	</div>
 """
 
-afterRender: (_) -> # I don't know how to do it in Coffeescript
+afterRender: (domEl) -> # I don't know how to do it in Coffeescript
 	`function additem(idnr) {
 		var theid = "item" + i
 		var theid_canton = "canton" + i
@@ -36,6 +47,8 @@ afterRender: (_) -> # I don't know how to do it in Coffeescript
 	}`
 	for i in [1..max_items]
 		additem(i)
+	$(domEl).find(".ticker-wrap").width screen.width + "px"
+	$(domEl).find(".ticker-wrap").css position, "0px"
 
 update: (output, domEl) ->
 	# This is ugly, I know :(
@@ -71,9 +84,8 @@ style: """
 	background: rgba(#000, 0.5)
 
 	left: 0px
-	top: 670px
 	width: 320px
-	/* font-size: 1em */
+	font-size: 16px
 
 	/* Pure CSS Ticker by Lewis Carey: https://codepen.io/lewismcarey/pen/GJZVoG */
 	@keyframes ticker {
@@ -90,14 +102,14 @@ style: """
 	}
 	.ticker-wrap
 		position: fixed
-		background-color: orange
+		background-color: #{bg_color}
 		width: 100%
 		overflow: hidden
 		height: 1.5rem
 		padding-left: 100%
 	#ticker
 		display: inline-block
-		background-color: orange
+		background-color: #{bg_color}
 		height: 1.5rem
 		line-height: 1.5rem
 		white-space: nowrap
@@ -105,19 +117,19 @@ style: """
 		-webkit-animation-iteration-count: infinite
 		-webkit-animation-timing-function: linear
 		-webkit-animation-name: ticker
-		-webkit-animation-duration: 100s
+		-webkit-animation-duration: #{scroll_time}
 		animation-iteration-count: infinite
 		animation-timing-function: linear
 		animation-name: ticker
-		animation-duration: 100s
+		animation-duration: #{scroll_time}
 	.ticker_item
 		display: inline-block
 		padding: 0 0.75rem
 		font-size: 1rem
-		color: white
+		color: #{headlines_color}
 	.firstitem
 		font-weight: bold
-		color: black
+		color: #{first_hl_color}
 	.ticker_item img
 		vertical-align: middle
 		height: 1.25rem
