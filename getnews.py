@@ -7,7 +7,7 @@ from xml.etree import ElementTree as etree
 
 def parsetitle(title):
 	couple = title.split(" - ")
-	canton = couple[0][-3:]
+	canton = couple[0][-2:]
 	place = couple[0][:-3]
 	return canton + "xxx2xxx" + place + "xxx2xxx" + couple[1]
 

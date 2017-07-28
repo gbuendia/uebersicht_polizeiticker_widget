@@ -14,7 +14,11 @@ render: (_) -> """
 """
 
 afterRender: (_) -> # I don't know how to do it in Coffeescript
-	`function additem(theid) {
+	`function additem(idnr) {
+		var theid = "item" + i
+		var theid_canton = "canton" + i
+		var theid_place = "place" + i
+		var theid_description = "story" + i
 		var child = document.createElement("div");
 		if (theid === "item1") {
 			child.className = "ticker_item firstitem";
@@ -22,12 +26,16 @@ afterRender: (_) -> # I don't know how to do it in Coffeescript
 			child.className = "ticker_item";
 		}
 		child.setAttribute("id", theid);
+		child.innerHTML = '<img id="' + theid_canton + '" src=""></> \
+		<span> \
+		<p id="' + theid_place + '"></p> \
+		<a id="' + theid_description + '" href="http://www.google.com"></a> \
+		</span>'
 		parent = document.getElementById("ticker");
 		parent.appendChild(child);
 	}`
 	for i in [1..max_items]
-		newid = "item#{i}"
-		additem(newid)
+		additem(i)
 
 update: (output, domEl) ->
 	# This is ugly, I know :(
@@ -43,9 +51,9 @@ update: (output, domEl) ->
 		newslist.push newsitem
 
 	for i in [1..max_items]
-		content = "[" + newslist[i-1][0] + " ] " + newslist[i-1][1] + ": " + newslist[i-1][2]
-		theid = "#item#{i}" 
-		$(domEl).find(theid).text content
+		$(domEl).find("#canton#{i}").attr "src", "http://lorempixel.com/16/16/" # Canton
+		$(domEl).find("#place#{i}").text newslist[i-1][1] + ": " # Place
+		$(domEl).find("#story#{i}").text newslist[i-1][2] + " ••• " # Title
 
 style: """
 	color: #fff
@@ -72,14 +80,14 @@ style: """
 	}
 	.ticker-wrap
 		position: fixed
-		background-color: red
+		background-color: orange
 		width: 100%
 		overflow: hidden
 		height: 1.5rem
 		padding-left: 100%
 	#ticker
 		display: inline-block
-		background-color: red
+		background-color: orange
 		height: 1.5rem
 		line-height: 1.5rem
 		white-space: nowrap
@@ -96,8 +104,20 @@ style: """
 		display: inline-block
 		padding: 0 0.75rem
 		font-size: 1rem
-		color: black
+		color: white
 	.firstitem
 		font-weight: bold
+		color: black
+	.ticker_item img
+		vertical-align: middle
+	.ticker_item span p
+		display: inline
+	.ticker_item span a
+		&:link
+		&:visited
+		&:hover
+		&:active
+			text-decoration: none
+			color: inherit
 """
 
