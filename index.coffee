@@ -52,7 +52,7 @@ position = "bottom" # Where on the screen you want the ticker: "top" or "bottom"
 # Jura: See https://commons.wikimedia.org/wiki/File%3AWappen_Jura_matt.svg, from Wikimedia Commons
 
 
-command: "python polizeiticker.widget/getnews.py"
+command: "polizeiticker.widget/getnews"
 refreshFrequency: 1000 * 60 * 5
 
 render: (_) -> """
