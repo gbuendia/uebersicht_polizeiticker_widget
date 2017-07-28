@@ -15,6 +15,8 @@ Farben, Geschwindigkeit und Nachrichtmenge.
 Einfach den Zip-Datei in dem Übersicht-Widgets Ordner unpacken. Normalerweise ist es `~/Library/Application support/Übersicht/widgets`.
 `index.coffee` mit einem Texteditor öffnen, und die gewünschte Werte ändern.
 
+Das Widget braucht Python und ihre Programmbibliotheke urllib2 und xml.etree, das heisst, sie sollten im Komputer vorhanden sein.
+
 ## English
 
 This is a widget for the [Übersicht app](http://tracesof.net/uebersicht/).
@@ -24,9 +26,11 @@ and displays them in a scrolling ticker.
 The background and font colours, ticker speed and number of headlines can be configures,
 as well as the ticker position on the top or bottom of the screen.
 
-###Some  Install and configure
+###  Install and configure
 Just download and extract the zip file in the apps' widgets folder (normally at `~/Library/Application support/Übersicht/widgets`),
 open `index.coffee` with a text editor and change the desired values.
+
+The widget uses Python and its libraries urllib2 and xml.etree, so they should be installed in the computer beforehand.
 
 ## Image licences
 The widget uses images taken from Wikimedia Commons to display the Cantons coats of arms.
