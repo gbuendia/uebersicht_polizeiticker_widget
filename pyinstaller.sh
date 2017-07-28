@@ -1,3 +1,3 @@
 #!/bin/sh
 
-pyinstaller --distpath ./ --clean --onefile getnews.py
+pyinstaller --distpath ./ --workpath ./pyinstaller-build --clean --onefile getnews.py

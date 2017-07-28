@@ -115,7 +115,7 @@ update: (output, domEl) ->
 			coat_of_arms = "polizeiticker.widget/images/" + newslist[i-1][0] + ".png"
 		$(domEl).find("#canton#{i}").attr "src", coat_of_arms # Canton
 		$(domEl).find("#place#{i}").text newslist[i-1][1] + ": " # Place
-		$(domEl).find("#story#{i}").text newslist[i-1][2] + " ••• " # Title
+		$(domEl).find("#story#{i}").text newslist[i-1][2] + "." # Title
 		$(domEl).find("#story#{i}").attr "href", newslist[i-1][3] # URL
 		######################### TO DO ###############################
 		#                                                             #

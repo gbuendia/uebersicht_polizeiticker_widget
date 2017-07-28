@@ -1,4 +1,4 @@
-# Übersicht Polizeiticker widget
+# Übersicht Polizeiticker.ch widget
 
 ![Screenshot](/screenshot.png?raw=true "Screenshot")
 
@@ -21,7 +21,8 @@ Das Widget braucht Python und ihre Programmbibliotheke urllib2 und xml.etree, da
 
 This is a widget for the [Übersicht app](http://tracesof.net/uebersicht/).
 It takes the latest headlines from the [Polizeiticker.ch site](http://www.polizeiticker.ch/index.html)'s RSS
-and displays them in a scrolling ticker.
+and displays them in a scrolling ticker. The content provider is Switzerland-centered, so only news from 
+that country and occasionally Germany are available.
 
 The background and font colours, ticker speed and number of headlines can be configures,
 as well as the ticker position on the top or bottom of the screen.
