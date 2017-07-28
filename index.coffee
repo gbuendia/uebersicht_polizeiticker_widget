@@ -2,14 +2,25 @@
 # Displays latest headlines from the Polizeiticker.ch RSS (in German)
 
 # ## CONFIGURATION ######################################################################
-max_items = 8 # how many headlines you want displayed, at most
-scroll_time = "100s" # How much time until the ticker has traveled across the screen
-# Notice: the longer the ticker, the faster it will go to fulfill a scroll_time
-headlines_color = "white" # What font colou you want to see the headlines in
-first_hl_color = "black" # If you want the first (and newest) item in a different colour
-bg_color = "orange" # The colour of the background, the ticker itself
-# Notice: the colours should be valid CSS names or values (e.g "BurlyWood" or "#DEB887")
+
+max_items = 8	# how many headlines you want displayed, at most.
+				# Wieviele Nachrichten auf Bildschirm, maximal.
+scroll_time = "100s"	# How much time until the ticker has traveled across the screen.
+						# Wieviel Zeit bis alle Nachrichten durch die Bildschirm Breite vorbei sind.
+# Notice: the longer the ticker, the faster it will go to fulfill a scroll_time.
+# Achtung: je länger der Ticker, desto schneller muss es gehen um den Zeit zu erreichen.
+
+headlines_color = "white"	# What font colou you want to see the headlines in.
+							# Welche Farbe für das Schrift den Nachrichten.
+first_hl_color = "black"	# If you want the first (and newest) item in a different colour.
+							# Welche Farbe für das Schrift der erste (und neuste) Nachricht.
+bg_color = "orange"	# The colour of the background, the ticker itself.
+					# Welche Farbe für den Hintergrund des Tickers.
+# Notice: the colours should be valid CSS names or values (e.g "BurlyWood" or "#DEB887").
+# Achtung: die Farben mussen gültige CSS Namen oder Werte (e.g "BurlyWood" or "#DEB887").
+
 position = "bottom" # Where on the screen you want the ticker: "top" or "bottom"
+					# Ob der Ticker oben (top) oder unten (bottom) sein soll.
 
 ##########################################################################################
 # IMAGE LICENCES FOR THE CANTONS' COATS OF ARMS:
