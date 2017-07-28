@@ -110,7 +110,7 @@ update: (output, domEl) ->
 		max_iterations = max_items
 	for i in [1..max_iterations]
 		if newslist[i-1][0] not in swiss_cantons
-			coat_of_arms = "polizeiticker.widget/images/XX.png"
+			coat_of_arms = "polizeiticker.widget/images/germany.png"
 		else
 			coat_of_arms = "polizeiticker.widget/images/" + newslist[i-1][0] + ".png"
 		$(domEl).find("#canton#{i}").attr "src", coat_of_arms # Canton
