@@ -19,7 +19,7 @@ bg_color = "orange"	# The colour of the background, the ticker itself.
 # Notice: the colours should be valid CSS names or values (e.g "BurlyWood" or "#DEB887").
 # Achtung: die Farben mussen gültige CSS Namen oder Werte (e.g "BurlyWood" or "#DEB887").
 
-position = "bottom" # Where on the screen you want the ticker: "top" or "bottom"
+position = "top" # Where on the screen you want the ticker: "top" or "bottom"
 					# Ob der Ticker oben (top) oder unten (bottom) sein soll.
 
 ##########################################################################################

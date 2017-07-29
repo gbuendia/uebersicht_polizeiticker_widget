@@ -35,6 +35,11 @@ for entry in items:
 # This is an ungly way to make it easier to work with later:
 objects = ""
 for i in feed:
+	if " - " not in i[0]:
+		# All headlines should have the format Town KT - Text"
+		# Otherwise it's a site announcement
+		# so we'll not use it
+		continue
 	objects += parsetitle(i[0]).encode("utf-8")
 	objects += "xxx1xxx"
 	objects += i[1].encode("utf-8")
