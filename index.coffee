@@ -5,7 +5,7 @@
 
 max_items = 8	# how many headlines you want displayed, at most.
 				# Wieviele Nachrichten auf Bildschirm, maximal.
-scroll_time = "100s"	# How much time until the ticker has traveled across the screen.
+scroll_time = "50s"	# How much time until the ticker has traveled across the screen.
 						# Wieviel Zeit bis alle Nachrichten durch die Bildschirm Breite vorbei sind.
 # Notice: the longer the ticker, the faster it will go to fulfill a scroll_time.
 # Achtung: je länger der Ticker, desto schneller muss es gehen um den Zeit zu erreichen.

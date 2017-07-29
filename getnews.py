@@ -9,7 +9,10 @@ def parsetitle(title):
 	couple = title.split(" - ")
 	canton = couple[0][-2:]
 	place = couple[0][:-3]
-	return canton + "xxx2xxx" + place + "xxx2xxx" + couple[1]
+	if len(couple) is 2:
+		return canton + "xxx2xxx" + place + "xxx2xxx" + couple[1]
+	else:
+		return canton + "xxx2xxx" + place + "xxx2xxx" + "Error: No headline available"
 
 # parse
 pt_file = urllib2.urlopen('http://www.polizeiticker.ch/polizeiticker-rss.xml')
