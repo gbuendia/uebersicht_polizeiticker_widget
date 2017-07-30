@@ -1,2 +1,3 @@
 getnews.spec
 pyinstaller-build
+*.sublime*
