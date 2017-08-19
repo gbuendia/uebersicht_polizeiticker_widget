@@ -52,7 +52,7 @@ position = "top" # Where on the screen you want the ticker: "top" or "bottom"
 # Jura: See https://commons.wikimedia.org/wiki/File%3AWappen_Jura_matt.svg, from Wikimedia Commons
 
 
-command: "polizeiticker.widget/getnews"
+command: "python polizeiticker.widget/getnews.py"
 refreshFrequency: 1000 * 60 * 5
 
 render: (_) -> """
@@ -90,33 +90,19 @@ afterRender: (domEl) -> # I don't know how to do it in Coffeescript
 	$(domEl).find(".ticker-wrap").css position, "0px"
 
 update: (output, domEl) ->
-	# This is ugly, I know :(
-	newslist = []
-	chunks = output.split("xxx0xxx")
-	for chunk in chunks
-		newsitem = []
-		parts = chunk.split("xxx1xxx")
-		info = parts[0].split("xxx2xxx")
-		for i in info
-			newsitem.push i # canton, place and title
-		newsitem.push parts[1] # url
-		newslist.push newsitem
+	# Get the JSON object containing all the tasks
+	jsonObj = JSON.parse(output)
 
-	swiss_cantons = ["ZH", "BE", "LU", "UR", "SZ", "OW", "NW", "GL", "ZG", "FR", "SO", "BS", "BL", "SH", "AR", "AI", "SG", "GR", "AG", "TG", "TI", "VD", "VS", "NE", "GE", "JU"]
-
-	if newslist.length < max_items
-		max_iterations = newslist.length
-	else
-		max_iterations = max_items
-	for i in [1..max_iterations]
-		if newslist[i-1][0] not in swiss_cantons
-			coat_of_arms = "polizeiticker.widget/images/germany.png"
-		else
-			coat_of_arms = "polizeiticker.widget/images/" + newslist[i-1][0] + ".png"
-		$(domEl).find("#canton#{i}").attr "src", coat_of_arms # Canton
-		$(domEl).find("#place#{i}").text newslist[i-1][1] + ": " # Place
-		$(domEl).find("#story#{i}").text newslist[i-1][2] + "." # Title
-		$(domEl).find("#story#{i}").attr "href", newslist[i-1][3] # URL
+	count = 0
+	for item in jsonObj
+		count += 1
+		coat_of_arms = "polizeiticker.widget/images/" + item["region"] + ".png"
+		$(domEl).find("#canton#{count}").attr "src", coat_of_arms
+		$(domEl).find("#place#{count}").text item["place"]
+		$(domEl).find("#story#{count}").text item["headline"]
+		$(domEl).find("#story#{count}").attr "href", item["link"]
+		if count == max_items
+			break
 
 style: """
 	color: #fff
