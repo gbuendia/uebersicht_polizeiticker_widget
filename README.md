@@ -39,7 +39,7 @@ the headlines are clickeable. Check the interaction key in your general Übersic
 
 ## Content licence
 The contents are provided by Spitaleri News and [tickermedia GmbH i.G.](http://www.polizeiticker.ch/rechtliches/impressum/)
-under a [Creative Commons](https://creativecommons.org/licenses/by-sa/3.0/) licence.
+under a [Creative Commons](https://creativecommons.org/licenses/by-sa/3.0/) licence ([archived](http://archive.is/4Z7T9).
 
 ## Image licences
 The widget uses images taken from Wikimedia Commons to display the Cantons coats of arms.
