@@ -18,7 +18,7 @@ def parsetitle(title):
 	if len(couple) > 2:   # The headline prolly uses one or more hyphens in the headline
 		couple = [couple[0], " - ".join(couple[1:])] # Rejoin the supposed headline, make it a 2 member couple
 		# Being length = 2, it should enter the following if too:
-	if len(couple) == 2: # The headline is prolly formatted as expected: place region - headline
+	if len(couple) == 2 and len(couple[0]) > 3: # The headline is prolly formatted as expected: place region - headline
 		# See if the last two letters of the first half are recognizable and preceded by space
 		if couple[0][-2:] in regions and couple[0][-3] == " ":
 			place = couple[0][:-3] + ": "
@@ -36,7 +36,7 @@ def parsetitle(title):
 		region = "XX"     # We'll use a non regional icon
 		headline = couple[0] + "."
 	else: # Nothing should enter the else :|
-		place = "Error"
+		place = ""
 		region = "XX"
 		headline = "Error parsing article title"
 	return [place, region, headline]

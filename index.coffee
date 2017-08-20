@@ -4,26 +4,27 @@
 # ## CONFIGURATION ######################################################################
 
 max_items = 8	# how many headlines you want displayed, at most.
-				# Wieviele Nachrichten auf Bildschirm, maximal.
+             	# Wieviele Nachrichten auf Bildschirm, maximal.
 scroll_time = "50s"	# How much time until the ticker has traveled across the screen.
-						# Wieviel Zeit bis alle Nachrichten durch die Bildschirm Breite vorbei sind.
+                   	# Wieviel Zeit bis alle Nachrichten durch die Bildschirm Breite vorbei sind.
 # Notice: the longer the ticker, the faster it will go to fulfill a scroll_time.
 # Achtung: je länger der Ticker, desto schneller muss es gehen um den Zeit zu erreichen.
 
 headlines_color = "white"	# What font colou you want to see the headlines in.
-							# Welche Farbe für das Schrift den Nachrichten.
+                         	# Welche Farbe für das Schrift den Nachrichten.
 first_hl_color = "black"	# If you want the first (and newest) item in a different colour.
-							# Welche Farbe für das Schrift der erste (und neuste) Nachricht.
+                        	# Welche Farbe für das Schrift der erste (und neuste) Nachricht.
 bg_color = "orange"	# The colour of the background, the ticker itself.
-					# Welche Farbe für den Hintergrund des Tickers.
+                   	# Welche Farbe für den Hintergrund des Tickers.
 # Notice: the colours should be valid CSS names or values (e.g "BurlyWood" or "#DEB887").
 # Achtung: die Farben mussen gültige CSS Namen oder Werte (e.g "BurlyWood" or "#DEB887").
 
-position = "top" # Where on the screen you want the ticker: "top" or "bottom"
-					# Ob der Ticker oben (top) oder unten (bottom) sein soll.
+position = "top"	# Where on the screen you want the ticker: "top" or "bottom"
+                	# Ob der Ticker oben (top) oder unten (bottom) sein soll.
 
 ##########################################################################################
-# IMAGE LICENCES FOR THE CANTONS' COATS OF ARMS:
+# IMAGE LICENCES:
+# CANTONS' COATS OR ARMS:
 # Zürich: By Stadt Zürich, see https://commons.wikimedia.org/wiki/File:Wappen_Z%C3%BCrich_matt.svg, via Wikimedia Commons
 # Bern: See https://commons.wikimedia.org/wiki/File%3AWappen_Bern_matt.svg, via Wikimedia Commons
 # Luzern: See https://commons.wikimedia.org/wiki/File%3AWappen_Luzern_matt.svg, from Wikimedia Commons
@@ -50,6 +51,12 @@ position = "top" # Where on the screen you want the ticker: "top" or "bottom"
 # Neuenburg: See https://commons.wikimedia.org/wiki/File%3AWappen_Neuenburg_matt.svg, from Wikimedia Commons
 # Genf: See https://commons.wikimedia.org/wiki/File%3AWappen_Genf_matt.svg, from Wikimedia Commons
 # Jura: See https://commons.wikimedia.org/wiki/File%3AWappen_Jura_matt.svg, from Wikimedia Commons
+# GERMAN LÄNDER:
+#
+# LIECHTENSTEIN:
+#
+# POLICEMAN ICON:
+# From http://icons8.com/ via Iconarchive, see https://icons8.com/license/
 
 
 command: "python polizeiticker.widget/getnews.py"
