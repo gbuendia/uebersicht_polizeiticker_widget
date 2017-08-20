@@ -6,7 +6,7 @@ import urllib2
 import json
 from xml.etree import ElementTree as etree
 
-regions = "ZH BE LU UR SZ OW NW GL ZG FR SO BS BL SH AR AI SG GR AG TG TI VD VS NE GE JU BW BY BB HB HH HE MV NI NW RP SL SN ST TH FL".split(" ")
+regions = "ZH BE LU UR SZ OW NW GL ZG FR SO BS BL SH AR AI SG GR AG TG TI VD VS NE GE JU BW BY BB HB HH HE MV NI RP SL SN ST TH FL".split(" ")
 # I removed BE and SH from the German länder as the collide with Bern and Schaffhausen, 
 # As the news are CH-centered, I assume they won't use them or if they use them they will use another abbreviation?
 # I couldn't find an example of news from Berlin or Schleswig in their feed to see what abbreviation they use.
@@ -26,7 +26,7 @@ def parsetitle(title):
 		# See if the region is NRW
 		elif couple[0][-4:] == " NRW":
 			place = couple[0][:-4] + ": "
-			region = "NW"
+			region = "NRW"
 		else: # Probably it's PT's company advice, or region-wide/state-wide news
 			place = couple[0] + ": "
 			region = "XX" # We'll use a non-regional icon
