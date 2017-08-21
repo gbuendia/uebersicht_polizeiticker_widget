@@ -30,11 +30,11 @@ def parsetitle(title):
 		else: # Probably it's PT's company advice, or region-wide/state-wide news
 			place = couple[0] + ": "
 			region = "XX" # We'll use a non-regional icon
-		headline = couple[1] + "."
+		headline = couple[1].strip() + "."
 	elif len(couple) == 1:  # Treat the whole title as a big header
 		place = ""        # We will not locate it
 		region = "XX"     # We'll use a non regional icon
-		headline = couple[0] + "."
+		headline = couple[0].strip() + "."
 	else: # Nothing should enter the else :|
 		place = ""
 		region = "XX"
