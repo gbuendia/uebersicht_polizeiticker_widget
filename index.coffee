@@ -59,7 +59,7 @@ position = "top"	# Where on the screen you want the ticker: "top" or "bottom"
 # From http://icons8.com/ via Iconarchive, see https://icons8.com/license/
 
 
-command: "polizeiticker.widget/getnews"
+command: "python polizeiticker.widget/getnews.py"
 refreshFrequency: 1000 * 60 * 5
 
 render: (_) -> """

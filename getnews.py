@@ -23,10 +23,16 @@ def parsetitle(title):
 		if couple[0][-2:] in regions and couple[0][-3] == " ":
 			place = couple[0][:-3] + ": "
 			region = couple[0][-2:]
-		# See if the region is NRW
+		# See if the region is formatted in a non normative way, as per casuistics when found:
 		elif couple[0][-4:] == " NRW":
 			place = couple[0][:-4] + ": "
 			region = "NRW"
+		elif couple[0][-4:] == " NDS":
+			place = couple[0][:-4] + ": "
+			region = "NI"
+		elif couple[0][:-5] == " (DE)":
+			place = couple[0][:-5] + ": "
+			region = "GERMANY"
 		else: # Probably it's PT's company advice, or region-wide/state-wide news
 			place = couple[0] + ": "
 			region = "XX" # We'll use a non-regional icon
