@@ -42,35 +42,7 @@ The contents are provided by Spitaleri News and [tickermedia GmbH i.G.](http://w
 under a [Creative Commons](https://creativecommons.org/licenses/by-sa/3.0/) licence ([archived](http://archive.is/4Z7T9).
 
 ## Image licences
-The widget uses images taken from Wikimedia Commons to display the Cantons coats of arms.
-
-* ZH.png: By Stadt Zürich, see [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Wappen_Z%C3%BCrich_matt.svg) for details.
-* BE.png: See [Wikimedia Commons](https://commons.wikimedia.org/wiki/File%3AWappen_Bern_matt.svg) for details.
-* LU.png: See [Wikimedia Commons](https://commons.wikimedia.org/wiki/File%3AWappen_Luzern_matt.svg) for details.
-* UR.png: See [Wikimedia Commons](https://commons.wikimedia.org/wiki/File%3AWappen_Uri_matt.svg) for details.
-* SZ.png: See [Wikimedia Commons](https://commons.wikimedia.org/wiki/File%3AWappen_des_Kantons_Schwyz.svg) for details.
-* OW.png: See [Wikimedia Commons](https://commons.wikimedia.org/wiki/File%3AWappen_Obwalden_matt.svg) for details.
-* NW.png: See [Wikimedia Commons](https://commons.wikimedia.org/wiki/File%3AWappen_Nidwalden_matt.svg) for details.
-* GL.png: See [Wikimedia Commons](https://commons.wikimedia.org/wiki/File%3AWappen_Glarus_matt.svg) for details.
-* ZG.png: See [Wikimedia Commons](https://commons.wikimedia.org/wiki/File%3AWappen_Zug_matt.svg) for details.
-* FR.png: See [Wikimedia Commons](https://commons.wikimedia.org/wiki/File%3AWappen_Freiburg_matt.svg) for details.
-* SO.png: See [Wikimedia Commons](https://commons.wikimedia.org/wiki/File%3AWappen_Solothurn_matt.svg) for details.
-* BS.png: See [Wikimedia Commons](https://commons.wikimedia.org/wiki/File%3AWappen_Basel-Stadt_matt.svg) for details.
-* BL.png: By Otto Plattner and Jwnabd, see [Wikimedia Commons](https://commons.wikimedia.org/wiki/File%3ACoat_of_arms_of_Kanton_Basel-Landschaft.svg) for details.
-* SH.png: See [Wikimedia Commons](https://commons.wikimedia.org/wiki/File%3AWappen_Schaffhausen_matt.svg) for details.
-* AR.png: See [Wikimedia Commons](https://commons.wikimedia.org/wiki/File%3AWappen_Appenzell_Ausserrhoden_matt.svg) for details.
-* AI.png: See [Wikimedia Commons](https://commons.wikimedia.org/wiki/File%3AWappen_Appenzell_Innerrhoden_matt.svg) for details.
-* SG.png: By Jwnabd, see [Wikimedia Commons](https://commons.wikimedia.org/wiki/File%3ACoat_of_arms_of_canton_of_St._Gallen.svg) for details.
-* GR.png: See [Wikimedia Commons](https://commons.wikimedia.org/wiki/File%3AWappen_Graub%C3%BCnden_matt.svg) for details.
-* AG.png: See [Wikimedia Commons](https://commons.wikimedia.org/wiki/File%3AWappen_Aargau_matt.svg) for details.
-* TG.png: See [Wikimedia Commons](https://commons.wikimedia.org/wiki/File%3AWappen_Thurgau_matt.svg) for details.
-* TI.png: See [Wikimedia Commons](https://commons.wikimedia.org/wiki/File%3AWappen_Tessin_matt.svg) for details.
-* VD.png: See [Wikimedia Commons](https://commons.wikimedia.org/wiki/File%3AWappen_Waadt_matt.svg) for details.
-* VS.png: See [Wikimedia Commons](https://commons.wikimedia.org/wiki/File%3AWappen_Wallis_matt.svg) for details.
-* NE.png: See [Wikimedia Commons](https://commons.wikimedia.org/wiki/File%3AWappen_Neuenburg_matt.svg) for details.
-* GE.png: See [Wikimedia Commons](https://commons.wikimedia.org/wiki/File%3AWappen_Genf_matt.svg) for details.
-* JU.png: See [Wikimedia Commons](https://commons.wikimedia.org/wiki/File%3AWappen_Jura_matt.svg) for details.
-* Germany: See [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Flag_of_Germany.svg) for details.
+See [LICENSES_ASSETS.md].
 
 # Other projects you might like:
 [Übersicht CH Meteo widget](https://github.com/gbuendia/uebersicht_ch_meteo_widget), a widget for Übersicht
