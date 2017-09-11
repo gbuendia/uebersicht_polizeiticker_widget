@@ -16,8 +16,8 @@ first_hl_color = "black"	# If you want the first (and newest) item in a differen
                         	# Welche Farbe für das Schrift der erste (und neuste) Nachricht.
 bg_color = "orange"	# The colour of the background, the ticker itself.
                    	# Welche Farbe für den Hintergrund des Tickers.
-# Notice: the colours should be valid CSS names or values (e.g "BurlyWood" or "#DEB887").
-# Achtung: die Farben mussen gültige CSS Namen oder Werte (e.g "BurlyWood" or "#DEB887").
+# Notice: the colours should be valid CSS names or values (e.g. "BurlyWood" or "#DEB887").
+# Achtung: die Farben mussen gültige CSS Namen oder Werte sein (z.B. "BurlyWood" oder "#DEB887").
 
 position = "top"	# Where on the screen you want the ticker: "top" or "bottom"
                 	# Ob der Ticker oben (top) oder unten (bottom) sein soll.
