@@ -1,6 +1,6 @@
 # Images
 
-## From Icons8
+## From Icons8
 * XX.png: the policeman icon is [CC-BY-ND](https://icons8.com/license/) by
 [Icons8](https://icons8.com/), obtained via [Iconarchive](http://www.iconarchive.com/show/windows-8-icons-by-icons8/Users-Police-icon.html).
 
