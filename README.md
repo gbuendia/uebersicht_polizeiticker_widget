@@ -42,7 +42,7 @@ The contents are provided by Spitaleri News and [tickermedia GmbH i.G.](http://w
 under a [Creative Commons](https://creativecommons.org/licenses/by-sa/3.0/) licence ([archived](http://archive.is/4Z7T9).
 
 ## Image licences
-See [LICENSES_ASSETS.md].
+See [LICENSES_ASSETSmd](LICENSES_ASSETS.md) file.
 
 # Other projects you might like:
 [Übersicht CH Meteo widget](https://github.com/gbuendia/uebersicht_ch_meteo_widget), a widget for Übersicht
