@@ -1,3 +1,10 @@
+# DISCONTINUED
+
+Unfortunately the people at polizeiticker.ch, as of mid-may 2018, are no longer offering an RSS feed, so this widget has nowhere to pull from.
+Sorry for the inconvenience.
+
+-----
+
 # Übersicht Polizeiticker.ch widget
 
 ![Screenshot](/screenshot.png?raw=true "Screenshot")
